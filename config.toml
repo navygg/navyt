@@ -1,0 +1,12 @@
+# id of the sdk
+SdkID="v1"
+
+# 此sdk有无app级别uid
+HasAppUID=true
+
+# 监听端口
+Host="0.0.0.0"
+Port=9091
+
+LogDir="/tmp/log/navyg"
+LogFile="navyt.log"

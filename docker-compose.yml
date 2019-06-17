@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+    navyt:
+        build: .
+        network_mode: bridge
+        image: navyt:${tag:-latest}
+        container_name: navyt_${tag:-latest}
+
+        ports:
+            - "127.0.0.1:9091:9091"
+
+        volumes:
+            - /tmp/log/navyg:/tmp/log/navyg
+
+        command:
+            ["/usr/bin/navyt", "run", "config.toml"]
