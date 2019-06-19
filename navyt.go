@@ -37,7 +37,6 @@ func (t *THandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	t.logger.Printf("%s, %s", host, p)
 
 	rsp, err := http.Get("https://api.mch.weixin.qq.com/pay/orderquery")
-	//rsp, err := http.Get("https://163.177.89.203/pay/orderquery")
 	if err != nil {
 		w.Write([]byte(fmt.Sprintf("http.Get() err: %v", err)))
 		return
