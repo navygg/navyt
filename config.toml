@@ -8,5 +8,5 @@ HasAppUID=true
 Host="0.0.0.0"
 Port=9098
 
-LogDir="/tmp/log/navyg"
+LogDir="/tmp/log/navyt"
 LogFile="navyt.log"
