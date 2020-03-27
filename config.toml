@@ -6,7 +6,7 @@ HasAppUID=true
 
 # 监听端口
 Host="0.0.0.0"
-Port=9091
+Port=9098
 
 LogDir="/tmp/log/navyg"
 LogFile="navyt.log"
