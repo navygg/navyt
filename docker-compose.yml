@@ -11,8 +11,8 @@ services:
             - "127.0.0.1:9098:9098"
 
         volumes:
-            - /tmp/log/navyg:/tmp/log/navyg
-            - /Users/navygong/work/go/src/mine/k8s/config.toml:/go/src/navyt/config.toml
+            - ${logpath}:${logpath}
+            - ${config}:/go/src/navyt/config.toml
 
         command:
             ["/usr/bin/navyt", "run", "config.toml"]
